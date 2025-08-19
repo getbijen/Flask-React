@@ -162,7 +162,7 @@ export const CreateForm = () => {
         <DialogFooter>
           <Button className="font-medium" type="submit" disabled={isSubmitting}>
             {isSubmitting ? (
-              <LoaderCircle className="size-5 animate-spin" />
+              <LoaderCircle className="size-5 animate-spin" data-testid="loading-spinner" />
             ) : (
               "Save"
             )}
